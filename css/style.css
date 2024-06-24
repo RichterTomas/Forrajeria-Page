@@ -32,3 +32,27 @@ main .presentacion{
     padding: 16%;
     background-image: url(../img/image.png);
 }
+
+.menu .seleccion{
+    display: flex;
+    justify-content: space-around;
+    border: solid red 3px;
+}
+
+.menu .mascotas{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid blue 3px;
+    
+    div{
+        text-align: center;
+        border: solid red 3px;
+    }
+    
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+    }
+}
+
