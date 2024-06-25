@@ -155,13 +155,34 @@ main .presentacion{
 
 .marcas{
     width: 70%;
-    
 }
 
 .m1,.m2{
     width: 100%;
+    display: flex;
+}
+
+.m1 div{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 33%;
+    border: solid 1px #e7e2de;
+    background-color: white;
     img{
         width: 33%;
-        height: 150px;
+    }
+}
+
+.m2 div{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 33%;
+    border: solid 1px #e7e2de;
+    border-top: none;
+    background-color: white;
+    img{
+        width: 33%;
     }
 }
