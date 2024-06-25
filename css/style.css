@@ -11,20 +11,63 @@
 h2{
     font-family: "Helvetica neue", Arial, Helvetica, sans-serif;
     letter-spacing: 2px;   
+    font-size: 30px;
 }
 
 p{
     font-family: 'Acumin pro', Arial, Helvetica, sans-serif ;
-    font-weight: bold;
+    font-size: 18px;
+    transition: 1s;
 }
 
 a{
     text-decoration: none;
+    font-family: 'Acumin pro', Arial, Helvetica, sans-serif ;
     color: black;
+    font-size: 20px;
 }
 
 
 /*----------------BOTONES-------------*/
+.boton:hover{
+    color: #B65D00;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+
+.navs {
+    margin-left: 25px;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.2s ease-out;
+}
+
+.navs::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.navs:hover::after {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 1px solid white;
+}
+
+.navs:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
 
 .logo{
     width: 50px;
@@ -41,7 +84,7 @@ body{
 
 header{
     width: 100%;
-    padding-top: 20px;
+    padding: 20px 0px;
     background-color: #005399;
     display: flex;
     justify-content: space-around;
@@ -52,7 +95,7 @@ nav{
     width: 40%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 main .presentacion{
