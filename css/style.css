@@ -36,19 +36,16 @@ main .presentacion{
 .menu .seleccion{
     display: flex;
     justify-content: space-around;
-    border: solid red 3px;
 }
 
 .menu .mascotas{
     display: flex;
     justify-content: center;
     
-    border: solid blue 3px;
-    
     div{
         text-align: center;
         margin-right: 3%;
-        border: solid red 3px;
+        
     }
     
     img{
@@ -58,3 +55,30 @@ main .presentacion{
     }
 }
 
+.distribuidores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.distribuidores .texto{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.marcas{
+    border: solid 5px blue;
+    width: 55%;
+    
+}
+
+.m1,.m2{
+    width: 100%;
+    border: solid 3px rgb(4, 255, 0);
+    img{
+        width: 33%;
+        height: 150px;
+    }
+}
