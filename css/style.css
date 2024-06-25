@@ -8,31 +8,36 @@
     src: url(../fonts/Acumin-RPro.ttf);
 }
 
+:root{
+    --background: #f7f4f2;
+    --backgroundHeader: #005399;
+
+    --acumin: 'Acumin pro', Arial, Helvetica, sans-serif;
+    --helvetica: "Helvetica neue", Arial, Helvetica, sans-serif;
+}
+
 h2{
-    font-family: "Helvetica neue", Arial, Helvetica, sans-serif;
+    font-family: var(--helvetica);
     letter-spacing: 2px;   
     font-size: 30px;
 }
 
 p{
-    font-family: 'Acumin pro', Arial, Helvetica, sans-serif ;
+    font-family: var(--acumin) ;
     font-size: 18px;
     transition: 1s;
 }
 
 a{
     text-decoration: none;
-    font-family: 'Acumin pro', Arial, Helvetica, sans-serif ;
+    font-family: var(--acumin) ;
     color: black;
     font-size: 20px;
 }
 
 
 /*----------------BOTONES Y VARIABLES-------------*/
-:root{
-    --background: #f7f4f2;
-    --backgroundHeader: #005399;
-}
+
 
 .boton:hover{
     color: #B65D00;
@@ -143,6 +148,7 @@ main .presentacion{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .distribuidores .texto{
@@ -185,4 +191,29 @@ main .presentacion{
     img{
         width: 33%;
     }
+}
+
+.caracteristicas{
+    display: flex;
+    justify-content:center;
+}
+
+.caracteristicas .c{
+    display: flex;
+    width: 17.3%;
+}
+
+.c div{
+    width: 60%;
+    margin-left: 5%;
+    span{
+        font-family: var(--helvetica);
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+}
+
+.c img{
+    margin-top: 2%;
 }
