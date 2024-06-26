@@ -176,8 +176,8 @@ main .presentacion{
     border: solid 1px #e7e2de;
     background-color: white;
     img{
-        width: 55%;
-        height: 80px;
+        width: 60%;
+        height: 100px;
       
 
     }
@@ -193,6 +193,7 @@ main .presentacion{
     background-color: white;
     img{
         width: 50%;
+        height: 100px;
 
        
     }
