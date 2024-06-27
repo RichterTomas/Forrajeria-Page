@@ -10,7 +10,10 @@
 
 :root{
     --background: #f7f4f2;
-    --backgroundHeader: #005399;
+    --backgroundHeader: rgb(41, 138, 222);
+    --colorboton: #ff7300;
+    
+    
 
     --acumin: 'Acumin pro', Arial, Helvetica, sans-serif;
     --helvetica: "Helvetica neue", Arial, Helvetica, sans-serif;
@@ -44,7 +47,7 @@ a{
 
 
 .boton:hover{
-    color: #B65D00;
+    color: var(--colorboton);
     padding-right: 20px;
     transition: 0.5s;
 }
@@ -89,6 +92,17 @@ a{
     height: 50px;
 }
 
+.logo_redes{
+    width: 35px;
+    height: 35px;
+    filter: grayscale(300%);
+    transition: 0.2s;
+}
+.logo_redes:hover{
+    transition: 0.2s;
+    filter: grayscale(0%);
+}
+
 
 
 body{
@@ -112,6 +126,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+main{
+    margin-bottom: 60px;
 }
 
 main .presentacion{
@@ -142,7 +159,7 @@ main .presentacion{
     
     img{
         width: 200px;
-        height: 250px;
+        height: 200px;
         border-radius: 200px;
     }
 }
@@ -237,7 +254,7 @@ main .presentacion{
     text-align: center;
     a{
         text-decoration: underline;
-        color: #ff7300;
+        color: var(--colorboton);
         transition: 0,5;
     }
     h1{
@@ -250,16 +267,36 @@ main .presentacion{
     transition: 0,5;
 }
 
-
 .textos{
     display: flex;
     justify-content: space-around;
     padding: 40px 0px;
+    a{
+        font-size: 17px;
+        transition: 0.2s;
+    }
+    span{
+        color: var(--colorboton);
+    }
 }
+
+.textos a:hover{
+    color: var(--colorboton);
+    transition: 0.2s;
+}
+
+.linea{
+    width: 70%;
+    padding: 1px 0px;
+    margin: 0px 15%;
+    background-color: black;
+}
+
 
 .politicas{
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 15px;
     div{
         width: 13%;
     }
@@ -271,4 +308,7 @@ main .presentacion{
 
 .redes2{
     text-align: end;
+    img{
+        padding-left: 10px;
+    }
 }
